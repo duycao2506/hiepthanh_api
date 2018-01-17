@@ -37,7 +37,7 @@ public class Messages implements Serializable {
 	private String content;
 	
 	
-	@ManyToOne( cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+	@ManyToOne( cascade = {CascadeType.MERGE})
     @JoinColumn(name="cust_id")
 	private UserInfo user;
 
